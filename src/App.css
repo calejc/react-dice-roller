@@ -18,7 +18,7 @@
 }
 
 #dice-1, #dice-2{
-  font-family: droidsansfallback, sans-serif;
+  /* font-family: droidsansfallback, sans-serif; */
   font-size: 120px;
   display: inline-flex;
   align-items: center;
@@ -26,4 +26,9 @@
   width: 50vw;
   margin: auto;
   white-space:pre-wrap;
+}
+
+img {
+  width:50%;
+  height:auto;
 }

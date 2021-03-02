@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-import {diceArt} from './data';
 
 function App() {
 
@@ -13,7 +12,7 @@ function App() {
 }
 
 function Dice(){
-  const [diceValue, setDice] = useState({dice1:0, dice2:0});
+  const [diceValue, setDice] = useState({dice1:6, dice2:6});
 
   function Roll(){
     const min = 1;
@@ -26,13 +25,13 @@ function Dice(){
   return (
     <div id="container">
       <div id="dice-1">
-        {diceArt[diceValue.dice1]}
+        <img src={diceValue.dice1 + ".jpg"} />
       </div>
       <div id="button">
         <button onClick={Roll}>ROLL</button>
       </div>
       <div id="dice-2">
-        {diceArt[diceValue.dice2]}
+        <img src={diceValue.dice2 + ".jpg"} />
       </div>
     </div>
   )
